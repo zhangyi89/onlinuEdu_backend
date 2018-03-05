@@ -26,7 +26,7 @@ class CourseSubCategory(models.Model):
     """课程子类
     eg: python linux
     """
-    category = models.ForeignKey("CourseCategory")
+    category = models.ForeignKey("CourseCategory", on_delete=models.CASCADE)
     name = models.CharField(max_length=64, unique=True)
 
     def __str__(self):

@@ -1,7 +1,8 @@
 import redis
 
 # pool = redis.ConnectionPool(host='172.16.240.132', port=6379)
-conn = redis.Redis(host='172.16.240.132', port=6379)
+# conn = redis.Redis(host='172.16.240.132', port=6379)
+conn = redis.Redis(host='52.15.206.110', port=6379)
 
 # 字典，散列表，哈希
 # conn.hset('k4','n1','xxx')
